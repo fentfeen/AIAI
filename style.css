@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px; /* Width of the sidebar */
+    background-color: #2f3136; /* Discord-like dark grey */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tabs {
+    flex-grow: 1;
+}
+
+.tab {
+    padding: 10px;
+    background-color: #4f545c; /* Tab color */
+    color: #e0e0e0; /* Light text */
+    border: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab.active {
+    background-color: #7289da; /* Active tab color */
+}
+
+#new-tab-btn {
+    background-color: #4a4a4a; /* Green for new channel button */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#chat-section {
+    flex-grow: 1; /* Take remaining space */
+    background-color: #1e1e1e; /* Slightly lighter dark grey for chat section */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #202225; /* Border between sidebar and chat */
+}
+
+header {
+    text-align: left; /* Align text to the left */
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #555555; /* Border for textarea */
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+    background-color: #222222; /* Dark grey background for textarea */
+    color: #e0e0e0; /* Light text color for textarea */
+}
+
+button[type="submit"] {
+    background-color: #2d2d2d; /* Button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2d2d2d; /* Darker button color on hover */
+}
+
+#output {
+    margin-top: 20px;
+    flex-grow: 1; /* Allow output to grow and take space */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+#ai-response p {
+    background-color: #2f3136; /* Dark grey background for responses */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Dark shadow for response boxes */
+}
