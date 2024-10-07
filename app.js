@@ -1,4 +1,4 @@
-const OPENAI_API_KEY = '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'; // Your OpenAI API key
+const OPENAI_API_KEY = 'sk-Ivv3FuvMOAeCUtKZ92cuJxvEAcNUGPMS79sYW_d035T3BlbkFJNKeOjzZ2mK0QAIJPakKnphVNTuxThrh51YCRZKgvgA'; // Your OpenAI API key
 const webhookUrl = 'https://discord.com/api/webhooks/1292725697109950517/7K0lm0hWFSvyekigP33Ja6kv2s-oCnJfTtoNnLLnvxs7074Fnz2o4AitrAJHr72SaW7k';
 
 let currentTab = null;
